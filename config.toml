@@ -1,8 +1,16 @@
-baseURL = "http://example.org/"
+baseURL = "https://andretecco.github.io/"
 title        = "Meu Blog"
-languageCode = "en-US"
+languageCode = "en-us"
 theme        = "hello-friend-ng"
-paginate     = 10
+#theme        = "nightfall"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
 
 [params]
   dateform        = "2 Jan, 2006"
@@ -39,6 +47,12 @@ paginate     = 10
 #      "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
     ]
 
+
+  [params.logo]
+  logoMark     = ">"
+  logoText     = "cd /home/"
+  logoHomeLink = "/"
+  
   [[params.social]]
   name = "github"
   url = "https://github.com/andretecco"
@@ -59,28 +73,19 @@ paginate     = 10
 [languages]
   [languages.en]
     title = "Olá Pessoal!"
-#    languageName = "English"
     weight = 1
-    subtitle = "Um tema simples para Hugo"
+    subtitle = "Esse é meu humilde blog"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Leia outros posts"
 
-    [languages.en.params.logo]
-      logoText = "cd /home/"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
-
 [menu]
   [[menu.main]]
-  identifier = "sobre"
+  identifier = "about"
   name       = "Sobre"
-  url        = "/sobre"
+  url        = "/about"
   
   [[menu.main]]
-  identifier = "postagens"
+  identifier = "posts"
   name       = "Postagens"
-  url        = "/postagens"
+  url        = "/posts"
