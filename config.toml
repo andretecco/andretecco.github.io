@@ -2,7 +2,6 @@ baseURL = "https://andretecco.github.io/"
 title        = "Meu Blog"
 languageCode = "en-us"
 theme        = "hello-friend-ng"
-#theme        = "nightfall"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
@@ -29,6 +28,8 @@ paginate  = 10
   
   # Show a global language switcher in the navigation bar
   enableGlobalLanguageMenu = false
+
+  defaultTheme = "dark"
 
   # Metadata mostly used in document's head
   description = "Minha nova página ou blog"
