@@ -83,7 +83,7 @@ paginate  = 10
   [[menu.main]]
   identifier = "about"
   name       = "Sobre"
-  url        = "/about"
+  url        = "/sobre"
   
   [[menu.main]]
   identifier = "posts"
