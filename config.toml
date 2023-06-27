@@ -1,7 +1,7 @@
 baseURL = "https://andretecco.github.io/"
 title        = "Meu Blog"
-languageCode = "en-us"
 theme        = "hello-friend-ng"
+DefaultContentLanguage = "pt-br"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
@@ -78,7 +78,7 @@ paginate  = 10
     series   = "series"  
 
 [languages]
-  [languages.en]
+  [languages.pt-br]
     title = "Olá Pessoal!"
     weight = 1
     subtitle = "Esse é meu humilde blog"
