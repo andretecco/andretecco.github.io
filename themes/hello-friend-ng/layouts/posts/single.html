@@ -85,7 +85,7 @@
         {{ if .Site.Params.dateformNumTime }}
           {{ dateFormat .Site.Params.dateformNumTime .Date.Local }}
         {{ else }}
-          {{ dateFormat "02-01-2006 15:04" .Date.Local }}
+          {{ dateFormat "2006-01-02 15:04" .Date.Local }}
         {{ end }}
 
         {{ if .Lastmod }} 

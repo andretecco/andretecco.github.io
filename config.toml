@@ -1,4 +1,5 @@
-baseURL = "https://andretecco.github.io/"
+#baseURL = "https://andretecco.github.io/"
+#baseURL = "192.168.1.57"
 title        = "Meu Blog"
 theme        = "hello-friend-ng"
 DefaultContentLanguage = "pt-br"
@@ -18,7 +19,7 @@ paginate  = 10
   dateformNumTime = "02-01-2006 15:04"
 
   # Subtitle for home
-  homeSubtitle = "Um simples blog"
+  homeSubtitle = "Meu Humilde Blog"
 
   # Set disableReadOtherPosts to true in order to hide the links to other posts.
   disableReadOtherPosts = false
@@ -79,9 +80,9 @@ paginate  = 10
 
 [languages]
   [languages.pt-br]
-    title = "Olá Pessoal!"
+    title = "@andretecco"
     weight = 1
-    subtitle = "Esse é meu humilde blog"
+    subtitle = "andretecco.github.io"
     keywords = ""
     copyright = '<a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
     readOtherPosts = "Leia outros posts"

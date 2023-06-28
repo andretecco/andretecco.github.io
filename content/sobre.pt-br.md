@@ -1,7 +1,12 @@
 ---
+author:
+  name: "Andre Tecco"
+date: 2023-06-27T21:00:00-03:00
 title: "Sobre"
-date: 2023-06-13T21:32:30-03:00
-draft: false
+aliases:
+- about-pt-br
+- contact
+- contato
 type: "page"
 ---
 

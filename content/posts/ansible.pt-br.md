@@ -1,20 +1,25 @@
 ---
-title: "Iniciando com Ansible"
-description: ""
-type: ["posts","post"]
-tags: [
-    "ansible",
-    "automation",
-]
-date: "14-06-2023 21:32:30"
-categories: [
-    "Ansible",
-    "Automation",
-]
-series: ["Ansible"]
+author:
+  name: "André Tecco"
+date: 2023-06-27T21:00:00-03:00
+title: Ansible
+categories:
+- Ansible
+- Automation
+tags:
+- ansible
+- automation
+linktitle: Ansible Localhost
+type:
+- post
+- posts
+weight: 10
+series:
+- Ansible
 ---
 
-# Playbook Ansible para configuração Local
+
+## Playbook Ansible para configuração Local
 Playbook para configuração e instalação local no Ubuntu
 
 Este Playbook foi testado com a versão:
