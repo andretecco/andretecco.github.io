@@ -1,7 +1,5 @@
 # Hello Friend NG
 
-![Hello Friend NG](./docs/screenshots/theme-main.png)
-
 ## General informations
 
 This theme based on
