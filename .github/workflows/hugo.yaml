@@ -81,3 +81,34 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+
+  discord_message_site:
+    runs-on: ubuntu-latest
+    name: discord message site
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Success
+        uses: rjstone/discord-webhook-notify@v1
+        if: success()
+        with:
+            severity: info
+            details: Succeeded!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK_SITE }}
+        
+      - name: Failure
+        uses: rjstone/discord-webhook-notify@v1
+        if: failure()
+        with:
+            severity: error
+            details: Failed!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK_SITE }}
+        
+      - name: Cancelled
+        uses: rjstone/discord-webhook-notify@v1
+        if: cancelled()
+        with:
+            severity: warn
+            details: Cancelled!
+            webhookUrl: ${{ secrets.DISCORD_WEBHOOK_SITE }}
