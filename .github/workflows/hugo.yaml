@@ -6,7 +6,6 @@ on:
   push:
     branches:
       - main
-      - hml
   pull_request:
     types: [opened, edited, closed, reopened]
     branches: [main, hml]
