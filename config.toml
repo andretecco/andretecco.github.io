@@ -57,7 +57,7 @@ paginate  = 10
 
   [params.logo]
   logoMark     = ">"
-  logoText     = "cd /home/"
+  logoText     = "cd /home/andretecco"
   logoHomeLink = "/"
   
   [[params.social]]
