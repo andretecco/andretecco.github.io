@@ -18,7 +18,6 @@ series:
 - Ansible
 ---
 
-
 ## Playbook Ansible para configuração Local
 Playbook para configuração e instalação local no Ubuntu
 
