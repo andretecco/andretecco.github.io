@@ -3,9 +3,9 @@ author:
   name: "André Tecco"
 date: 2023-06-27T21:00:00-03:00
 title: Ansible
-categories:
-- Ansible
-- Automation
+#categories:
+#- Ansible
+#- Automation
 tags:
 - ansible
 - automation
