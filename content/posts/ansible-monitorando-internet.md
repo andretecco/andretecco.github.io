@@ -101,4 +101,4 @@ Senhas de acesso.
 
 ## Dashboard Grafana
 ------------------------
-![Internet Monitoring Dashboard Grafana](./images/internet-monitoring.png)
+![Internet Monitoring Dashboard Grafana](/content/posts/images/internet-monitoring.png/images/internet-monitoring.png)
