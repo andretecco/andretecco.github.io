@@ -17,10 +17,10 @@ type:
 - post
 - posts
 weight: 10
-series:
-- Ansible
-- Monitoramento
-- Internet
+#series:
+#- Ansible
+#- Monitoramento
+#- Internet
 ---
 
 ## Monitorando Velocidade Internet
