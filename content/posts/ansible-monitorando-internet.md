@@ -3,10 +3,10 @@ author:
   name: "André Tecco"
 date: 2023-11-10T14:00:00-03:00
 title: Ansible Monitorando Link
-categories:
-- Ansible
-- Automation
-- Monitoramento
+#categories:
+#- Ansible
+#- Automation
+#- Monitoramento
 tags:
 - ansible
 - automation
@@ -17,10 +17,10 @@ type:
 - post
 - posts
 weight: 10
-#series:
-#- Ansible
-#- Monitoramento
-#- Internet
+series:
+- Ansible
+- Monitoramento
+- Internet
 ---
 
 ## Monitorando Velocidade Internet
