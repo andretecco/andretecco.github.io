@@ -1,8 +1,8 @@
 ---
 author:
   name: "André Tecco"
-date: 2023-11-10T14:00:00-03:00
-title: Ansible Monitorando Link
+date: 2023-11-10
+title: Ansible - Stack para Monitorar Velocidade do Link
 #categories:
 #- Ansible
 #- Automation

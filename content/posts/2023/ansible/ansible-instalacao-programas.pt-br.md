@@ -1,8 +1,8 @@
 ---
 author:
   name: "André Tecco"
-date: 2023-06-27T21:00:00-03:00
-title: Ansible
+date: 2023-06-27
+title: Ansible - Configuração e Instalação de Programas
 #categories:
 #- Ansible
 #- Automation

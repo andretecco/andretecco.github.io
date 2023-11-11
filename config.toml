@@ -8,6 +8,13 @@ PygmentsStyle = "monokai"
 
 paginate  = 10
 
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+dropsDir     = "drops"
+
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
@@ -96,3 +103,8 @@ paginate  = 10
   identifier = "posts"
   name       = "Postagens"
   url        = "/posts"
+
+  [[menu.main]]
+  identifier = "drops"
+  name       = "Drops"
+  url        = "/drops"
