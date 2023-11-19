@@ -5,10 +5,10 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches:
-      - main
+      - '*'
   pull_request:
     types: [opened, edited, closed, reopened]
-    branches: [main, hml]
+    branches: ['*']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -81,33 +81,11 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v2
 
-  discord_message_site:
-    runs-on: ubuntu-latest
-    name: discord message site
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Success
-        uses: rjstone/discord-webhook-notify@v1
-        if: success()
-        with:
-            severity: info
-            details: Succeeded!
-            webhookUrl: ${{ secrets.DISCORD_WEBHOOK_SITE }}
-        
-      - name: Failure
-        uses: rjstone/discord-webhook-notify@v1
-        if: failure()
-        with:
-            severity: error
-            details: Failed!
-            webhookUrl: ${{ secrets.DISCORD_WEBHOOK_SITE }}
-        
-      - name: Cancelled
-        uses: rjstone/discord-webhook-notify@v1
-        if: cancelled()
-        with:
-            severity: warn
-            details: Cancelled!
-            webhookUrl: ${{ secrets.DISCORD_WEBHOOK_SITE }}
+      - name: Discord Message
+        uses: th0th/notify-discord@v0.4.1
+        if: ${{ always() }}
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_SITE }}
+          GITHUB_ACTOR: ${{ github.actor }}
+          GITHUB_JOB_NAME: "Build and deploy"
+          GITHUB_JOB_STATUS: ${{ job.status }}
