@@ -2,7 +2,7 @@
 author:
   name: "André Tecco"
 date: 2023-11-23
-title: Ansible Semaphore UI
+title: Ansible - Semaphore UI
 #categories:
 #- Ansible
 #- Automation
@@ -13,7 +13,7 @@ tags:
 - interface
 - dashboard
 - semaphore
-linktitle: Ansible Semaphore UI
+linktitle: Ansible - Semaphore UI
 type:
 - post
 - posts
