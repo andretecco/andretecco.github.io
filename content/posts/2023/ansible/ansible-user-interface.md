@@ -144,7 +144,7 @@ Testes com a versão:
    ```
    
    - Configurar um nome para o Projeto.
-     ![Novo Projeto](../../../../images/semaphore-post/inicial_new_project.png)
+     ![Novo Projeto](https://github.com/andretecco/andretecco.github.io/raw/main/images/semaphore-post/inicial_new_project.png)
 
    - Acessar o menu Key Store e criar duas chaves, uma para o ssh e outra para o password par utilizar com sudo na execução do playbook pelo semaphore.
 
