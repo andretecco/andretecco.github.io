@@ -3,12 +3,12 @@ name: Deploy Hugo site to Pages
 
 on:
   # Runs on pushes targeting the default branch
-  #push:
-  #  branches:
-  #    - main
-  pull_request:
-    types: [opened, edited, closed, reopened]
-    branches: ['*']
+  push:
+    branches:
+      - main
+  #pull_request:
+  #  types: [opened, edited, closed, reopened]
+  #  branches: ['*']
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
