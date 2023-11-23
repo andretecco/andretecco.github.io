@@ -2,7 +2,7 @@
 author:
   name: "André Tecco"
 date: 2023-11-23
-title: Ansible Semaphore UI
+title: Ansible - Semaphore UI
 #categories:
 #- Ansible
 #- Automation
@@ -13,7 +13,7 @@ tags:
 - interface
 - dashboard
 - semaphore
-linktitle: Ansible Semaphore UI
+linktitle: Ansible - Semaphore UI
 type:
 - post
 - posts
@@ -144,36 +144,36 @@ Testes com a versão:
    ```
    
    - Configurar um nome para o Projeto.
-     ![Novo Projeto](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_new_project.png)
+     ![Novo Projeto](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_new_project.png)
 
    - Acessar o menu Key Store e criar duas chaves, uma para o ssh e outra para o password par utilizar com sudo na execução do playbook pelo semaphore.
 
    - Key Store SSH
      - No campo Private Key, colocar o conteúdo do arquivo semaphore_rsa
-     ![Key Store SSH](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_ssh_key_store.png)
+     ![Key Store SSH](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_ssh_key_store.png)
 
    - Key Store Login with password
      - Preencher o campo password com a senha de acesso ao host
-     ![Key Store Login with password](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_key_store.png)
+     ![Key Store Login with password](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_key_store.png)
 
    - Environment
      - Preencher o Extra Variables com alguma extra_vars
-     ![Environment](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_environment.png)
+     ![Environment](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_environment.png)
 
    - Repositories
      - Preencher o campo URL or Path e Acces Key com a Key gerada somente com a senha.
      - O campo URL or Path colocar /tmp/semaphore onde estará o playbook utilizado para o teste.
-     ![Repositories](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_repository.png)
+     ![Repositories](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_repository.png)
 
    - Inventory
      - Configurar o inventory com as informações sobre o host que será configurado.
-     ![Inventory](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_inventory.png)
+     ![Inventory](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_inventory.png)
 
    - Tasks Template
      - Configurar o template com informações do que deverá ser executado.
      - Em Playbook Filename é o playbook a ser executado que está na pasta /tmp/semaphore configurada em repository.
-     ![Tasks Template](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_template.png)
+     ![Tasks Template](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_template.png)
 
    - Tasks Template Execução
      - Acessar Tasks Template e clicar em Run ao lado direito da tela.
-     ![Tasks Template Execução](https://github.com/andretecco/andretecco.github.io/blob/main/images/images/semaphore-post/inicial_execucao_do_template.png)
+     ![Tasks Template Execução](https://github.com/andretecco/andretecco.github.io/blob/main/images/semaphore-post/inicial_execucao_do_template.png)
