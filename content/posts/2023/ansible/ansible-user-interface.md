@@ -50,8 +50,8 @@ Testes com a versão:
 -----------------
 
 1. Criando o ambiente.
-   1. Debian: `mkdir -p /tmp/semaphore`
-   2. Acessar o diretório: `cd /tmp/semaphore`
+   - Debian: `mkdir -p /tmp/semaphore`
+   - Acessar o diretório: `cd /tmp/semaphore`
 2. Download para instalação: `wget -c https://github.com/ansible-semaphore/semaphore/releases/download/v2.9.37/semaphore_2.9.37_linux_amd64.deb`  
 3. Instalar o Semaphore: `sudo dpkg -i semaphore_2.9.37_linux_amd64.deb`
 4. Configuração do Semaphore: `semaphore setup`
@@ -130,18 +130,19 @@ Testes com a versão:
 9. Configurar o Semaphore.
     
    - Playbook `nginx.yml` utilizado nos testes em /tmp/semaphore, que será citado na instrução Tasks Template
+     - Código de exemplo.
 
-   ```yaml
-     - name: Semaphore Homelab
-       hosts: semaphore_nodes
-       become: true
-       tasks:
-         - name: Instalando Nginx
-           ansible.builtin.apt:
-             name: nginx
-             state: latest
-             update_cache: true
-   ```
+     ```yaml
+       - name: Semaphore Homelab
+         hosts: semaphore_nodes
+         become: true
+         tasks:
+           - name: Instalando Nginx
+             ansible.builtin.apt:
+               name: nginx
+               state: latest
+               update_cache: true
+     ```
    
    - Configurar um nome para o Projeto.
      - Preencher conforme a necessidade.
