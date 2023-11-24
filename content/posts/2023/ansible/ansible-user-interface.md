@@ -132,17 +132,17 @@ Testes com a versão:
    - Playbook `nginx.yml` utilizado nos testes em /tmp/semaphore, que será citado na instrução Tasks Template
      - Código de exemplo.
 
-     ```yaml
-       - name: Semaphore Homelab
-         hosts: semaphore_nodes
-         become: true
-         tasks:
-           - name: Instalando Nginx
-             ansible.builtin.apt:
-               name: nginx
-               state: latest
-               update_cache: true
-     ```
+       ```yaml
+         - name: Semaphore Homelab
+           hosts: semaphore_nodes
+           become: true
+           tasks:
+             - name: Instalando Nginx
+               ansible.builtin.apt:
+                 name: nginx
+                 state: latest
+                 update_cache: true
+       ```
    
    - Configurar um nome para o Projeto.
      - Preencher conforme a necessidade.
