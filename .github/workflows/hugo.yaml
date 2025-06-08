@@ -36,8 +36,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
 #      HUGO_VERSION: 0.111.3
-#      HUGO_VERSION: 0.113.0
-      HUGO_VERSION: 0.147.2
+      HUGO_VERSION: 0.127.0
+#      HUGO_VERSION: 0.147.2
       HUGO_ENVIRONMENT: production
       TZ: America/Sao_Paulo
     steps:
