@@ -1,7 +1,9 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="author" content="{{ if .Params.author }}{{ .Params.author }}{{ else }}{{ range .Site.Params.author }}{{ . }} {{ end }}{{ end }}">
+
+<meta name="author" content="{{ with .Params.author }}{{ . }}{{ else }}{{ .Site.Params.author }}{{ end }}">
+
 <meta name="description" content="{{ if .IsHome }}{{ .Site.Params.homeSubtitle }}{{ else }}{{ if .Params.Description }}{{ .Params.Description }}{{ else }}{{ .Summary | plainify }}{{ end }}{{ end }}" />
 <meta name="keywords" content="{{ .Site.Params.keywords }}{{ if .Params.tags }}{{ range .Params.tags }}, {{ . }}{{ end }}{{ end }}" />
 <meta name="robots" content="noodp" />
@@ -54,7 +56,7 @@
 
 <!-- JSON Feed -->
 {{ if .OutputFormats.Get "json" }}
-<link href="{{ if .OutputFormats.Get "json" }}{{ .Site.BaseURL }}feed.json{{ end }}" rel="alternate"
+<link href="{{ .Site.BaseURL }}feed.json" rel="alternate"
     type="application/json" title="{{ .Site.Title }}" />
 {{ end }}
 
@@ -63,10 +65,12 @@
     {{ partial "extra-head.html" . }}
 {{- end }}
 
-<!-- Google Analytics internal template -->
+<!-- Google Analytics (DESABILITADO - incompatível com Hugo novo) -->
+{{/*
 {{- if .Site.GoogleAnalytics }}
     {{ template "_internal/google_analytics.html" . }}
 {{- end}}
+*/}}
 
 <!-- Plausible.io -->
 {{- if $.Site.Params.plausibleDataDomain }}
