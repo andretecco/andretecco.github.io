@@ -19,8 +19,26 @@ Estou sempre em busca de desafios para aplicar meu conhecimento em infraestrutur
 
 
 ### Carreira
+### Dexian Brasil
+- Network Site Reliability Engineer | SRE Sr (dez de 2023 - o momento)
+  >Atuo como responsável pela sustentação, implantação e monitoramento de infraestrutura em um ambiente altamente dinâmico, voltado para soluções white label de mobilidade em um modelo 100% B2B2C. Minha rotina envolve garantir a estabilidade, escalabilidade e observabilidade de sistemas críticos em produção, com foco em automação, segurança e alta disponibilidade.
+
+  > Ferramentas mais utilizadas
+  > - AKS
+  > - Ansible
+  > - ArgoCD
+  > - Azure
+  > - Docker
+  > - Git
+  > - Grafana
+  > - Kubernetes
+  > - Portainer
+  > - Prometheus
+  > - Python
+  > - SO - Linux
+
 ### Datum
-- DevOps Senior (ago de 2022 - nov de 2023 · 1 ano 4 meses)
+- DevOps Sr (ago de 2022 - nov de 2023 · 1 ano 4 meses)
   >Suporte a Infraestrutura e Automação no cliente Getnet Brasil (a Santander Company).
   > - Apoio e sustentação a infraestrutura existente.
   > - Implementar novas funcionalidades e melhorias.
