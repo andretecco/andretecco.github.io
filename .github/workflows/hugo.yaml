@@ -88,8 +88,9 @@ jobs:
       DART_SASS_VERSION: 1.99.0
       GO_VERSION: 1.26.1
       HUGO_VERSION: 0.160.0
+#      HUGO_VERSION: 0.127.0
       NODE_VERSION: 24.14.1
-      TZ: Europe/Oslo
+      TZ: America/Sao_Paulo
     steps:
       - name: Checkout
         uses: actions/checkout@v6

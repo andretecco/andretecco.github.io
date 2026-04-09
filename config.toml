@@ -15,6 +15,7 @@ layoutDir    = "layouts"
 publishDir   = "public"
 dropsDir     = "drops"
 
+#
 [permalinks]
   posts = "/posts/:year/:month/:title/"
 
